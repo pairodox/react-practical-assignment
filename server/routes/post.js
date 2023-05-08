@@ -23,13 +23,13 @@ router.post('/:id/picture', upload.single('picture'), async (req, res) => {
             const filePath = `http://localhost:8080/${file.filename}`;
             /** 
              * tricky part
-             * we need this because sometime couple of processes trying to edit the same file
-             * and some of the changes doesn't saves
-             * not best solution but enough for task app 
+             * we need this because sometimes several processes are trying to edit the same file
+             * and some of the changes don't save
+             * not the best solution but enough for task app
             **/
             setTimeout(async () => {
                 let post = await getPostDB(postID);
-                if (!post) throw new Error(`Post ${postID} doesn't exists`);
+                if (!post) throw new Error(`Post ${postID} doesn't exist`);
                 post.imageSrc = filePath;
                 await editPostDB(post.id, post);
                 post = await getPostDB(postID);
