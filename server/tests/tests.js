@@ -34,11 +34,11 @@ const postTests = async () => {
     const notExistingPost = await getPostDB(1010);
     console.log('FETCHED NOT EXISTING POST', notExistingPost);
 
-    const unvalidPost = createPost('First post', null, 'some/path');
+    const invalidPost = createPost('First post', null, 'some/path');
     try {
-        await addPostDB(unvalidPost);
+        await addPostDB(invalidPost);
     } catch(e) {
-        console.log('ADDING UNVALID POST ERROR', e)
+        console.log('ADDING INVALID POST ERROR', e)
     }
 }
 

@@ -26,7 +26,7 @@ exports.commentSchema = {
         default: [],
     },
     date: {
-        validator: (val) => typeof +val === 'number' && +val !== NaN,
+        validator: (val) => typeof +val === 'number' && !isNaN(+val),
         required: false,
         default: () => Date.now().toString(),
     },

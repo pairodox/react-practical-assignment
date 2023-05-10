@@ -1,6 +1,6 @@
 const { getTable, updateTable, generateId } = require("../db/dbUtils");
 const { TABLE_NAMES } = require("../db/tables/tables");
-const { validate } = require("../db/validation");;
+const { validate } = require("../db/validation");
 
 exports.postSchema = {
     title: {
@@ -26,7 +26,7 @@ exports.postSchema = {
         required: false,
     },
     date: {
-        validator: (val) => typeof +val === 'number' && +val !== NaN,
+        validator: (val) => typeof +val === 'number' && !isNaN(+val),
         required: false,
         default: () => Date.now().toString(),
     },

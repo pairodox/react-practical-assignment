@@ -1,0 +1,1 @@
+import searchPosts from "server/controllers/postCtrl.js"

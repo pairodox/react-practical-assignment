@@ -1,0 +1,1 @@
+import addComment from "server/controllers/commentCtrl.js"

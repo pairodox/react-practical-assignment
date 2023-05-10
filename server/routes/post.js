@@ -24,7 +24,7 @@ router.post('/:id/picture', upload.single('picture'), async (req, res) => {
             /** 
              * tricky part
              * we need this because sometimes several processes are trying to edit the same file
-             * and some of the changes don't save
+             * and a part of the changes don't save
              * not the best solution but enough for task app
             **/
             setTimeout(async () => {
@@ -45,7 +45,7 @@ router.post('/:id/picture', upload.single('picture'), async (req, res) => {
                         })
                     } 
                 } catch (err) {
-                    console.log('Failed to remove ald pictures for post', postID, err);
+                    console.log('Failed to remove old pictures from post', postID, err);
                 }
 
                 res.status(200).send({success: true, result: post});

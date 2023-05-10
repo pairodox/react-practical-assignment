@@ -1,0 +1,1 @@
+import editPost from "server/controllers/postCtrl.js"

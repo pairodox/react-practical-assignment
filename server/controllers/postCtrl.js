@@ -71,7 +71,7 @@ exports.getPostsPage = async (req, res, next) => {
             const totalPages = posts ? Math.ceil(posts.length / COUNT_PER_PAGE) : 0;
             return res.status(200).send({success: true, result: posts.slice(firstIdx, lastIdx) || [], totalPages: totalPages, total: posts ? posts.length : 0, page: pageNumber});
         } else {
-            throw new Error('Unvalid page number param. It should be number more than 0');
+            throw new Error('Invalid page number param. It should be a number more than 0');
         }
     } catch (e) {
         return res.status(400).send({success: false, result: e.message});

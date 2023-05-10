@@ -20,7 +20,7 @@ exports.validate = (schema, object) => {
                 }
                 if (!isValid) {
                     valid = false;
-                    errorText += `${key} field is unvalid = ${object[key]}; `
+                    errorText += `${key} field is invalid = ${object[key]}; `
                 }
             }
             for (let key in object) {

@@ -1,0 +1,1 @@
+import deletePost from "server/controllers/postCtrl.js"
