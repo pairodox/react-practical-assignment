@@ -1,5 +1,6 @@
 import {useEffect} from 'react';
 import './App.css';
+import Login from "./components/Login";
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      TASK IMPLEMENTATION HERE
+      <Login/>
     </div>
   );
 }
