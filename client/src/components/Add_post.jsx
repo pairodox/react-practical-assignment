@@ -1,4 +1,4 @@
-import addPost from "server/controllers/postCtrl.js"
+//import addPost from "server/controllers/postCtrl.js"
 
 const Add_post = ({user_id}) => {
 
