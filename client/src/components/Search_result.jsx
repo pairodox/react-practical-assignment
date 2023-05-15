@@ -1,4 +1,4 @@
-const Search_result = ({user_id, search}) => {
+const Search_result = ({username, search}) => {
 
 }
 

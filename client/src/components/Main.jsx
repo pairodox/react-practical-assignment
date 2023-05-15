@@ -1,11 +1,19 @@
 import {Route, Routes} from "react-router";
+import {useState} from "react";
+//import {router as router_1} from "server/routes/post.js"
+import Add_post from "./Add_post";
+import Post_pages from "./Post_pages";
+import Add_comment from "./Add_comment";
+import Search from "./Search";
+import Edit_post from "./Edit_post";
+import Delete_post from "./Delete_post";
 
-const Main = ({user_id}) => {
+const Main = ({username}) => {
     return(
         <div id={"main"}>
-            <p>Welcome, {user_id}</p>
+            <p>Welcome, {username}</p>
             <Routes>
-                <Route path={''} element={<Main login = {user_id}/>}/>
+                <Route path={''} element={<Main login = {username}/>}/>
                 {/*<Route path={/*path from server router} element={<Add_post login = {login}/>}/>
                 <Route path={/*path from server router} element={<Edit_post login = {login}/>}/>
                 <Route path={/*path from server router} element={<Delete_post login = {login}/>}/>

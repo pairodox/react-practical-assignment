@@ -86,7 +86,7 @@ response: [
     }
     ...
 ]
-+ response conains additional information: totalPages, total and page
++ response contains additional information: totalPages, total and page
 
 DELETE POST
 url: MAIN_URL + 'post/{id}'
@@ -167,7 +167,7 @@ response: {
 }
 
 
-=============== i hope next endpoints will shouldn't be used, but i'll left it here, just in case ====================
+=============== i hope next endpoints will not be used, but i left them here, just in case ====================
 
 GET ALL POSTS
 url: MAIN_URL + 'post'

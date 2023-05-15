@@ -1,11 +1,20 @@
 let Post = class extends Object {
-
-    constructor(user_id) {
+    constructor(username) {
         super();
         let date = new Date().toString()
-        let post_id = user_id + "_" + date
-        let likes = [0]
-        let dislikes = [0]
+        let id = username + "_" + date
+        let likes = []
+        let dislikes = []
+        let title = ''
+        let imageSrc = ''
+        let comments = []
     }
 
+    render() {
+        return(
+            <div id={this.id}>
+
+            </div>
+        )
+    }
 }

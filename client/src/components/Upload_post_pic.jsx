@@ -1,4 +1,4 @@
-const Upload_post_pic = ({user_id, post_id}) => {
+const Upload_post_pic = ({username, post_id}) => {
 
 }
 

@@ -1,6 +1,6 @@
 //import deletePost from "server/controllers/postCtrl.js"
 
-const Delete_post = ({user_id, post_id}) => {
+const Delete_post = ({username, post_id}) => {
 
 }
 
