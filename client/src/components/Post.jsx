@@ -1,15 +1,15 @@
-import {ReactComponent} from "*.svg";
+import React, {Component} from "react";
 
-let Post = class extends ReactComponent {
+let Post = class extends Component {
 
-    constructor(username, text, title) {
-        super();
+    constructor(username, text, title, post_id) {
+        super({username, text, title, post_id});
         this.date = new Date().toString()
-        this.id = username + "_" + this.date
+        this.id = post_id
         this.likes = []
         this.dislikes = []
         this.title = title
-        this.imageSrc = ''
+        this.image_src = ''
         this.comments = []
         this.text = text
     }
@@ -18,22 +18,30 @@ let Post = class extends ReactComponent {
         return(
             <div id={this.id}>
                 <p>{this.title}</p>
-                <image path={this.image}/>
+                <image path={this.image_src}/>
                 <p>{this.text}</p>
                 <div className={"Likes&Dislikes"}>
                     <p>{this.likes.length}</p>
                     <button className={"Like"} onClick={() =>{
-                        return(
+                        if(!this.likes.includes(this.username)) {
                             this.likes.append(this.username)
-                        )
+                            this.dislikes.filter(user => user !== this.username)
+                        }
+                        else{
+                            this.likes.filter(user => user !== this.username)
+                        }
                     }}>
                         Like
                     </button>
                     <p>{this.dislikes.length}</p>
                     <button className={"Dislike"} onClick={() =>{
-                        return(
+                        if(!this.dislikes.includes(this.username)) {
                             this.dislikes.append(this.username)
-                        )
+                            this.likes.filter(user => user !== this.username)
+                        }
+                        else{
+                            this.dislikes.filter(user => user !== this.username)
+                        }
                     }}>
                         Dislike
                     </button>

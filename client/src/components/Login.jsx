@@ -8,18 +8,18 @@ const Login = () => {
     return(
         <div className={'login_container'}>
             <Header/>
-            <Router location={''} navigator={''}>
+            {/*<Router>*/}
                 <div className={'login_body'}>
                     <input id={'login_input'} placeholder={"Enter your login"}/>
-                    <Link to={``}>
+                    {/*<Link to={``}>*/}
                         <button id={'login_confirm'} onClick={() => {
                             return(
                                 <Main username={document.getElementById('login_input').value}/>
                             )
                         }}>Login</button>
-                    </Link>
+                    {/*</Link to={``}>*/}
                 </div>
-            </Router>
+            {/*}</Router>*/}
             <Footer/>
         </div>
     )
