@@ -4,10 +4,10 @@ import Search_result from "./Search_result";
 const Search_post = ({username}) => {
     return(
         <div className={"Search_container"}>
-            <input placeholder={"Enter the search term"}/>
+            <input id={"Search_input"} type={"text"} placeholder={"Enter the search term"}/>
             <button onClick={() => {
                 return(
-                    <Search_result username={username} /*search={}*//>
+                    <Search_result username={username} keyword={document.getElementById("Search_input").value}/>
                 )}}>Search</button>
         </div>
     )

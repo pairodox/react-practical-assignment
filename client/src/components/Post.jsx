@@ -45,10 +45,15 @@ let Post = class extends Component {
                     }}>
                         Dislike
                     </button>
-                    <p>Made by {this.username} at {this.date}</p>
+
                 </div>
-            </div>
-        )
+                <button className={"Edit"}>Edit</button>
+                <button className={"Delete"}>Delete</button>
+                <p>Made by {this.username} at {this.date}</p>
+                <div className={"Comments"}>
+                    {this.comments}
+                </div>
+            </div>)
     }
 }
 

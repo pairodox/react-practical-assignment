@@ -40,8 +40,10 @@ let Comment = class extends Component{
                     }}>
                         Dislike
                     </button>
-                    <p>{this.date}</p>
                 </div>
+                <button className={"Edit"}>Edit</button>
+                <button className={"Delete"}>Delete</button>
+                <p>{this.date}</p>
             </div>
         )
     }

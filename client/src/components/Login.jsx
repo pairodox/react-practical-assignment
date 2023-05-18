@@ -10,7 +10,7 @@ const Login = () => {
             <Header/>
             {/*<Router>*/}
                 <div className={'login_body'}>
-                    <input id={'login_input'} placeholder={"Enter your login"}/>
+                    <input type={"text"} id={'login_input'} placeholder={"Enter your login"}/>
                     {/*<Link to={``}>*/}
                         <button id={'login_confirm'} onClick={() => {
                             return(

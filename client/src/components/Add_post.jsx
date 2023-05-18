@@ -5,12 +5,12 @@ import Post from "./Post";
 const Add_post = ({username}) => {
     let date = new Date().toString()
     let post_id = username + "_" + date
+    let post_pages = document.getElementById("Post_pages")
     return(
         <div id={"Add_post"}>
-            <input id={"Add_post_title"}/>
+            <input type={"text"} id={"Add_post_title"}/>
             <textarea id={"Add_post_text"} placeholder={"Enter your text"}/>
-            <button id={"Add_post_pic_button"}>Add a picture</button>
-            {/*add picture upload*/}
+            <input type={"file"} name="Browse" onChange={}/>
             <br/>
             <button id={"Finish_post"} onClick={() =>{
                 return(
@@ -20,6 +20,7 @@ const Add_post = ({username}) => {
                           title={document.getElementById("Add_post_title").value}
                           image_src={document.getElementById("Add_post_pic").value}/>
                 )
+                {/*change page*/}
             }}>Add post</button>
         </div>
     )
