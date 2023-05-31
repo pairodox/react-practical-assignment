@@ -1,4 +1,4 @@
-import addComment from "../../../server/controllers/commentCtrl.js"
+//import addComment from "../../../server/controllers/commentCtrl.js"
 
 import Comment from "./Comment";
 
@@ -12,13 +12,13 @@ const Create_comment = ({username, post_id}) => {
             <textarea id={"Add_comment_text"} placeholder={"Enter your text"}/>
             <br/>
             <button id={"Finish_comment"} onClick={() =>{
-                addComment
-                /*post.comments.append( <Comment username={username}
+                //addComment()
+                post.comments.append( <Comment username={username}
                                                post_id={post_id}
                                                comment_id={comment_id}
                                                text={document.getElementById("Add_comment_text").value}/>
                 )
-                {/*change page}*/
+                {/*change page*/}
             }}>Add post</button>
         </div>
     )

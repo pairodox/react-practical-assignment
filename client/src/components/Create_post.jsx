@@ -1,5 +1,5 @@
-import addPost from "../../../server/controllers/postCtrl.js"
-import postSchema from "../../../server/models/index.js"
+//import addPost from "../../../server/controllers/postCtrl.js"
+//import postSchema from "../../../server/models/index.js"
 import Post from "./Post";
 import {Route, Routes} from "react-router";
 import {MAIN_URL} from "../utils/const";
