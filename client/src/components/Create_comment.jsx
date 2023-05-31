@@ -12,7 +12,7 @@ const Create_comment = ({username, post_id}) => {
             <textarea id={"Add_comment_text"} placeholder={"Enter your text"}/>
             <br/>
             <button id={"Finish_comment"} onClick={() =>{
-                addComment()
+                addComment
                 /*post.comments.append( <Comment username={username}
                                                post_id={post_id}
                                                comment_id={comment_id}
