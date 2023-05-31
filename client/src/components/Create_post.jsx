@@ -1,5 +1,5 @@
-import addPost from "server/controllers/postCtrl.js"
-import postSchema from "server/models/index.js"
+import addPost from "../../../server/controllers/postCtrl.js"
+import postSchema from "../../../server/models/index.js"
 import Post from "./Post";
 import {Route, Routes} from "react-router";
 import {MAIN_URL} from "../utils/const";
@@ -12,7 +12,7 @@ const Create_post = ({username}) => {
         <div id={"Create_post"}>
             <input type={"text"} id={"Add_post_title"}/>
             <textarea id={"Add_post_text"} placeholder={"Enter your text"}/>
-            <input type={"file"} name="Browse" onChange={}/>
+            <input type={"file"} id = {"Add_post_pic"} name="Browse"/>
             <br/>
             <button id={"Finish_post"} onClick={() =>{
                 return(

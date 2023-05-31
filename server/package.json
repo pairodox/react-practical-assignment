@@ -26,5 +26,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
+  },
+  "bin": {
+    "post_ctrl": "../controllers/postCtrl.js",
+    "comment_ctrl": "../controllers/commentCtrl.js"
   }
 }

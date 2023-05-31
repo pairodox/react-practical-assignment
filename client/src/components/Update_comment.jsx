@@ -1,4 +1,4 @@
-import editComment from "server/controllers/commentCtrl.js"
+import editComment from "../../../server/controllers/commentCtrl.js"
 
 import Comment from "./Comment";
 

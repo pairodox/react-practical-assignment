@@ -1,4 +1,4 @@
-import searchPosts from "server/controllers/postCtrl.js"
+import searchPosts from "../../../server/controllers/postCtrl.js"
 import Search_result from "./Search_result";
 
 const Search_post = ({username}) => {

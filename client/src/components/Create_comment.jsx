@@ -1,4 +1,4 @@
-import addComment from "server/controllers/commentCtrl.js"
+import addComment from "../../../server/controllers/commentCtrl.js"
 
 import Comment from "./Comment";
 

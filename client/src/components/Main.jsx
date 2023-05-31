@@ -9,8 +9,8 @@ import Delete_post from "./Delete_post";
 import {CREATE_COMMENT, CREATE_POST, DELETE_POST, MAIN_URL, SEARCH, UPDATE_POST} from "../utils/const";
 import Update_comment from "./Update_comment";
 import Delete_comment from "./Delete_comment";
-const router_post = require("server/routes/post.js")
-const router_comment = require("server/routes/comment.js")
+const router_post = require("../../../server/routes/post.js")
+const router_comment = require("../../../server/routes/comment.js")
 
 const Main = ({username}) => {
     return(

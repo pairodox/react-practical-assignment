@@ -1,5 +1,5 @@
-//import getPostsPage from "server/controllers/postCtrl.js"
-import postSchema from "server/models/index.js"
+//import getPostsPage from "../../../server/controllers/postCtrl.js"
+import postSchema from "../../../server/models/index.js"
 import {page_length} from "../utils/const";
 
 const Post_pages = ({username, page_number}) => {

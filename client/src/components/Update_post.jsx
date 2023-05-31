@@ -1,5 +1,5 @@
-//import editPost from "server/controllers/postCtrl.js"
-import postSchema from "server/models/index.js"
+//import editPost from "../../../server/controllers/postCtrl.js"
+import postSchema from "../../../server/models/index.js"
 import Post from "./Post";
 
 const Update_post = ({username, post_id}) => {
