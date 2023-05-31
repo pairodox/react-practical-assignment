@@ -2,6 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Main from "./Main";
 import {Link, Router} from "react-router-dom";
+import {Route, Routes} from "react-router";
 
 
 const Login = () => {
@@ -14,7 +15,10 @@ const Login = () => {
                     {/*<Link to={``}>*/}
                         <button id={'login_confirm'} onClick={() => {
                             return(
-                                <Main username={document.getElementById('login_input').value}/>
+                                <Routes>
+                                    <Route path={''} element={<Main username= {document.getElementById('login_input').value}/>}/>
+                                </Routes>
+                                //<Main username={document.getElementById('login_input').value}/>
                             )
                         }}>Login</button>
                     {/*</Link to={``}>*/}

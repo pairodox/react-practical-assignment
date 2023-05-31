@@ -1,4 +1,4 @@
-//import searchPosts from "server/controllers/postCtrl.js"
+import searchPosts from "server/controllers/postCtrl.js"
 import Search_result from "./Search_result";
 
 const Search_post = ({username}) => {
@@ -7,8 +7,9 @@ const Search_post = ({username}) => {
             <input id={"Search_input"} type={"text"} placeholder={"Enter the search term"}/>
             <button onClick={() => {
                 return(
-                    <Search_result username={username} keyword={document.getElementById("Search_input").value}/>
-                )}}>Search</button>
+                    searchPosts
+                    /*<Search_result username={username} keyword={document.getElementById("Search_input").value}/>
+                */)}}>Search</button>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 //import deletePost from "server/controllers/postCtrl.js"
-
+import postSchema from "server/models/index.js"
 const Delete_post = ({username, post_id}) => {
     let post = document.getElementById(post_id)
     return(
