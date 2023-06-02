@@ -1,6 +1,6 @@
-export const MAIN_URL = "http://localhost:8080/"
+export const MAIN_URL = "http://localhost:3000/"//"http://localhost:8080/"
 export const LOGGED_IN = (username) => {
-    return(MAIN_URL + `/${username}`)
+    return(MAIN_URL + `${username}`)
 }
 export const CREATE_POST = MAIN_URL + 'post/'
 export const UPDATE_POST = (post_id) => {
